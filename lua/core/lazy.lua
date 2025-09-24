@@ -27,4 +27,5 @@ require("lazy").setup({
 	require("plugins.telescope"),
 	require("plugins.lualine"),
 	require("plugins.gitsigns"),
+	require("plugins.nvim_surround"),
 })

@@ -15,15 +15,15 @@ return {
 				"markdown_inline",
 				"javascript",
 				"typescript",
+				"tsx",
+				"html",
+				"css",
 				"python",
 			},
 
 			auto_install = true,
-			highlight = {
-				enable = true,
-				additional_vim_regex_highlighting = { "ruby" },
-			},
-			indent = { enable = false, disable = { "ruby" } },
+			highlight = { enable = true },
+			indent = { enable = true },
 			textobjects = {
 				select = {
 					enable = true,
@@ -42,7 +42,7 @@ return {
 						["]m"] = "@function.outer",
 						["]]"] = "@class.outer",
 					},
-					goto_previous_start = {
+					goo_previous_start = {
 						["[m"] = "@function.outer",
 						["[["] = "@class.outer",
 					},

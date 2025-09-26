@@ -28,4 +28,5 @@ require("lazy").setup({
 	require("plugins.lualine"),
 	require("plugins.gitsigns"),
 	require("plugins.nvim_surround"),
+	require("plugins.nvim_ts_autotag"),
 })

@@ -7,6 +7,7 @@ return {
 			"black",
 			"prettier",
 			"prettierd",
+			"clang-format",
 		},
 	},
 	dependencies = { "mason-org/mason.nvim", "mason-org/mason-lspconfig.nvim" },

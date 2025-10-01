@@ -8,5 +8,5 @@ opt.expandtab = true
 opt.cursorline = true
 opt.scrolloff = 10
 opt.breakindent = true
-opt.clipboard = 'unnamedplus'
+opt.clipboard = "unnamedplus"
 opt.termguicolors = true

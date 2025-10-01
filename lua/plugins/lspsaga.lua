@@ -100,8 +100,8 @@ return {
 
 			-- Lightbulb (auto show when code-action available)
 			lightbulb = {
-				enable = true,
-				sign = true,
+				enable = false,
+				sign = false,
 				virtual_text = false,
 				debounce = 10,
 				sign_priority = 40,

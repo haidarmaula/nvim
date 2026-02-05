@@ -6,11 +6,11 @@ return {
 			options = {
 				component_separators = "|",
 			},
-			tabline = {
-				lualine_a = {
-					{ "buffers" },
-				},
-			},
+			-- tabline = {
+			-- 	lualine_a = {
+			-- 		{ "buffers" },
+			-- 	},
+			-- },
 			sections = {
 				lualine_c = {},
 			},

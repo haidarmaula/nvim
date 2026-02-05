@@ -8,16 +8,27 @@ map("n", "<leader>h", function()
 	print("hello world!")
 end)
 
+-- Save / Quit / File Explorer
 map("n", "<leader>w", ":w<CR>", { desc = "Save file" })
 map("n", "<leader>q", ":q<CR>", { desc = "Quit" })
 map("n", "<leader>e", ":Ex<CR>", { desc = "File Explorer" })
 
-map("n", "<S-h>", ":bprevious<CR>", { silent = true, desc = "Previous Buffer" })
-map("n", "<S-l>", ":bnext<CR>", { silent = true, desc = "Next buffer" })
+-- Buffer navigation
+map("n", "<S-h>", ":BufferLineCyclePrev<CR>", { silent = true, desc = "Previous Buffer" })
+map("n", "<S-l>", ":BufferLineCycleNext<CR>", { silent = true, desc = "Next buffer" })
+
+-- Buffer actions
 map("n", "<leader>bd", ":bdelete<CR>", { silent = true, desc = "Delete Buffer" })
 
+-- Move buffers in BufferLine
+map("n", "[b", ":BufferLineMovePrev<CR>", { silent = true, desc = "Move buffer left" })
+map("n", "]b", ":BufferLineMoveNext<CR>", { silent = true, desc = "Move buffer right" })
+
+-- Move current line
 map("n", "<A-k>", ":m .-2<CR>==", { desc = "Move current line up" })
 map("n", "<A-j>", ":m .+1<CR>==", { desc = "Move current line down" })
+
+-- Move selected block
 map("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move selected block up" })
 map("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move selected block down" })
 

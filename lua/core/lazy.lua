@@ -13,23 +13,5 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	require("plugins.tokyonight"),
-	require("plugins.treesitter"),
-	require("plugins.mason"),
-	require("plugins.nvim_lspconfig"),
-	require("plugins.mason_lspconfig"),
-	require("plugins.mason_tool_installer"),
-	require("plugins.blink"),
-	require("plugins.conform"),
-	require("plugins.oil"),
-	require("plugins.oil_git"),
-	require("plugins.nvim_autopairs"),
-	require("plugins.telescope"),
-	require("plugins.lualine"),
-	require("plugins.gitsigns"),
-	require("plugins.nvim_surround"),
-	require("plugins.nvim_ts_autotag"),
-	require("plugins.lspsaga"),
-	require("plugins.indent_blankline"),
-	require("plugins.bufferline"),
+	{ import = "plugins" },
 })

@@ -2,7 +2,14 @@
 
 This is my personal Neovim config. Built from scratch, tweaked obsessively, and tuned exactly the way my brain works. It's not a distro, it's not a starter template, and it's definitely not for everyone. It's just mine.
 
-## A. The Story
+## A. Preview
+<img width="1448" height="790" alt="Screenshot From 2026-03-18 09-18-19" src="https://github.com/user-attachments/assets/1359f5c5-f0da-4a84-9e95-28f1c4884fd8" />
+
+<img width="1448" height="790" alt="Screenshot From 2026-03-18 09-19-53" src="https://github.com/user-attachments/assets/905c8c76-bdac-417d-bdfd-5bdf5f3bf4a8" />
+
+<img width="1448" height="790" alt="Screenshot From 2026-03-18 09-20-20" src="https://github.com/user-attachments/assets/fd156ce9-4b63-4ffa-8deb-65dc52563c9d" />
+
+## B. The Story
 
 Yeah, I used VS Code. It's fine, nothing wrong with it, but the reason I left wasn't really about performance or RAM or any of that. Honestly? I just really like typing. Like, a lot. Hands on keyboard, no mouse, no trackpad, just vibes and keystrokes. VS Code kind of supports that, but Neovim is literally built for it. And also, Neovim just looks cooler.
 
@@ -10,14 +17,14 @@ So I made the switch. Started with [kickstart.nvim](https://github.com/nvim-lua/
 
 So I threw it all out and started from scratch.
 
-## B. Philosophy
+## C. Philosophy
 
 - **Keyboard first, always.** If I'm reaching for the mouse, something went wrong.
 - **Understand what you install.** Every plugin here, I know what it does and why it's there. No more mystery configs.
 - **One plugin, one file.** Future me should be able to find anything in under 5 seconds.
 - **Stable over bleeding-edge.** I just want to write code, not debug my editor.
 
-## C. Structure
+## D. Structure
 
 ```
 .
@@ -34,7 +41,7 @@ So I threw it all out and started from scratch.
     └── plugins               # One file per plugin, no exceptions
 ```
 
-## D. Plugins
+## E. Plugins
 
 | Category | Plugin |
 |---|---|
@@ -54,7 +61,7 @@ So I threw it all out and started from scratch.
 | **Autotag** | [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) |
 | **Indent** | [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) |
 
-## E. Keymaps
+## F. Keymaps
 
 **Leader key**: `Space`
 
@@ -117,14 +124,14 @@ So I threw it all out and started from scratch.
 |---|---|
 | `Alt+j/k` | Move line / selection up or down |
 
-## F. Requirements
+## G. Requirements
 
 - [Neovim](https://neovim.io/) >= 0.10
 - [Git](https://git-scm.com/)
 - A [Nerd Font](https://www.nerdfonts.com/) — icons won't render without it, and it'll look terrible
 - `make`, `gcc` / `clang` (for Treesitter parsers)
 
-## G. Installation
+## H. Installation
 
 > Back up your existing config first if you have one (`~/.config/nvim`).
 
